@@ -1,0 +1,50 @@
+#include <iostream>
+#include <fstream>
+#include <cassert>
+#include <cstring>
+#include <cstdio>
+#include <stack>
+
+using namespace std;
+
+const int INF=1e9+7;
+
+int main()
+{
+    int n,m;
+    double d[100][100];//点数，边数，邻接矩阵
+    cin>>n>>m;
+    
+    memset(d,INF,sizeof(d));//初始化邻接矩阵
+    for(int i=1;i<=n;i++){
+        d[i][i]=0;
+    }
+    int a,b;
+    double c;
+    for(int i=1;i<=m;i++){
+        cin>>a>>b>>c;//边的信息
+        d[a][b]=c;
+
+    }
+    int sz;
+    cin>>sz;
+    while(sz--){
+        int sza,szb;
+        double szz;
+        cin>>sza>>szb>>szz;
+        int temp=d[sza][szb];
+        d[sza][szb]=(1+szz)*temp;//出现灾难后，路的权重=长度+权重系数*长度
+    }
+    for(int k=1;k<=n;k++){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(d[i][k]<INF&&d[k][j]<INF){  //判断是否能从松弛点到达
+                    d[i][j]=min(d[i][j],d[i][k]+d[k][j]);
+                }
+            }
+        }
+    }
+    int st,ed;
+    cin>>st>>ed;
+    cout<<d[st][ed]<<endl;
+}
