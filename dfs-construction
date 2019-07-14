@@ -1,0 +1,147 @@
+#include <iostream>
+#include <fstream>
+#include <cassert>
+#include <cstring>
+#include <cstdio>
+#include <stack>
+using namespace std;
+const int INF=1e9+7;
+int n,m;
+int field[1005][1005];
+int vis[1005][1005];
+int vis2[1005][1005];
+int res;
+int dx[4]={1,0,-1,0},dy[4]={0,1,0,-1};
+int sx,sy,b;
+double ans;
+int flag;
+void dfs(int x,int y)
+{
+    
+    if(field[x][y]==3)
+    {
+        vis[x][y]=res;
+        field[x][y]=4;
+    }
+    for(int i=0;i<4;i++){
+        int nx=x+dx[i],ny=y+dy[i];
+        if(0<=nx&&nx<n&&0<=ny&&ny<m&&field[nx][ny]==3)
+        {
+            dfs(nx,ny);
+        }
+    }
+}
+
+void dfs2(int x,int y,double ress)
+{
+    
+    if(field[x][y]==0)
+    {
+        cout<<"救援人员没了!"<<endl;
+        return;
+    }
+    if(field[x][y]==4&&vis[x][y]==b){
+        ans=0;
+        return;
+    }
+    vis2[x][y]=1;
+    for(int i=0;i<4;i++){
+        int nx=x+dx[i],ny=y+dy[i];
+        if(0<=nx&&nx<n&&0<=ny&&ny<m&&field[nx][ny]!=0&&!vis2[nx][ny])
+        {
+            if(field[nx][ny]==2)
+            {
+                dfs2(nx,ny,ress+1);
+            }
+            if(field[nx][ny]==1)
+            {
+                dfs2(nx,ny,ress+3);
+            }
+            if(field[nx][ny]==4&&vis[nx][ny]==b)
+            {
+                ans=min(ans,ress+1);
+            }
+        }
+    }
+    vis2[x][y]=0;
+}
+
+void dfs3(int x,int y,double ress)
+{
+    if(flag==1)
+        return;
+    if(field[x][y]==4&&vis[x][y]==b&&ans==0)
+    {
+        cout<<x<<" "<<y<<endl;
+        return;
+    }
+    vis2[x][y]=1;
+    for(int i=0;i<4;i++){
+        int nx=x+dx[i],ny=y+dy[i];
+        if(0<=nx&&nx<n&&0<=ny&&ny<m&&field[nx][ny]!=0&&!vis2[nx][ny])
+        {
+            if(field[nx][ny]==2)
+            {
+                dfs3(nx,ny,ress+1);
+            }
+            if(field[nx][ny]==1)
+            {
+                dfs3(nx,ny,ress+3);
+            }
+            if(field[nx][ny]==4&&vis[nx][ny]==b&&ans==ress+1)
+            {
+                cout<<nx<<" "<<ny<<endl;
+                flag=1;
+            }
+        }
+    }
+    vis2[x][y]=0;
+    if(flag)
+    {
+        cout<<x<<" "<<y<<endl;
+    }
+}
+
+int main()
+{
+    freopen("/Users/apple/desktop/input.txt","r",stdin);
+    cin>>n>>m;
+    cout<<n<<" "<<m<<endl;
+    for(int i=0;i<n;i++)
+        for(int j=0;j<m;j++)
+        {
+            scanf("%1d",&field[i][j]);
+        }
+    memset(vis,0,sizeof(vis));
+    res=0;
+
+    for(int i=0;i<n;i++)
+        for(int j=0;j<m;j++)
+        {
+            if(field[i][j]==3)
+            {
+                res++;
+                dfs(i,j);
+            }
+        }
+    cout<<"共有房区数:"<<res<<endl;
+    int k;
+    cin>>k;
+    while(k--)
+    {
+        ans=INF;
+        memset(vis2,0,sizeof(vis2));
+        cin>>sx>>sy>>b;
+        dfs2(sx,sy,0);
+        if(ans!=INF){
+        cout<<"最小花费："<<ans<<endl;
+        cout<<"最短路径："<<endl;
+        flag=0;
+        memset(vis2,0,sizeof(vis2));
+        dfs3(sx,sy,0);
+        }
+        else{
+            cout<<"没救了！"<<endl;
+        }
+    }
+}
