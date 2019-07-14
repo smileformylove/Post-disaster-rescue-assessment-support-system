@@ -1,0 +1,55 @@
+import json
+from PIL import Image, ImageDraw
+IMG_PATH = "./zaihou.jpg"
+im01 = Image.open(IMG_PATH)
+width, height = im01.size
+newIm= Image.new('RGB', (width, height), 'red')
+def fillcolor(label):
+if label=='0':
+temp=(255, 0, 0)
+elif label=='1':
+temp=(0,0,255)
+elif label=='2':
+temp=(0,255,0)
+elif label=='3':
+temp=(255,255,0)
+return temp
+def covtuple(points):
+list1=[]
+for items in points:
+itemstuple=tuple(items)
+list1.append(itemstuple)
+return list1
+def drawpoints(points,label):
+draw = ImageDraw.Draw(newIm)
+pointslist=covtuple(points)
+#print(pointslist)
+draw.polygon(pointslist, fill = fillcolor(label))
+def convmask(IM):
+mask=[]
+width1, height1 = IM.size
+img_src = IM.convert('RGBA')
+str_strlist = img_src.load()
+for x in range(width1):
+maskrow=[]
+for y in range(height1):
+point=str_strlist[x,y]
+if (point==(255, 0, 0,255)):
+maskrow.append(0)
+elif(point==(0,0,255,255)):
+maskrow.append(1)
+elif(point==(0,255,0,255)):
+maskrow.append(2)
+elif(point==(255,255,0,255)):
+maskrow.append(3)
+mask.append(maskrow) 
+return mask 
+with open('./road.json', 'r') as f:
+dict1 = json.load(f)
+f.close()
+for items in dict1['shapes']:
+drawpoints(items['points'],items['label'])
+newIm.show()
+mask=convmask(newIm)
+print(mask)
+newIm.save(r'./dye.jpg')
