@@ -8,7 +8,7 @@ Since images or videos of post disaster are unaccessible for us by now, our mode
 ## Object Detection
 In this section, What we do is just collecting the related images with dangerous objects, such as leakage wire, sharp item, corrupted house and so on. Then we feed them into the Watson for visual recognition on IBM cloud. Here is our outcome for classifying images and detecting objects:
 * Image classification:
-![avatar](./OBJECT~1/dt3.png)
+![avatar](./object~1/dt3.png)
 
 ## Semantic Segmentation: 
 
