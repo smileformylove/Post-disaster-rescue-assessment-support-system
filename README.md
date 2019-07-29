@@ -13,23 +13,25 @@ In this section, What we do is just collecting the related images with dangerous
 ```
 cd workspacce
 ```
-* Image captured by drone
+* Image captured by drone:
 ![avatar](./PRM/road.jpg)
-* Result of semantic segmentation
+* The architecture of semantic segmentation model:
+![avatar](./PRM/architecture.jpg)
+* Result of semantic segmentation:
 ![avatar](./PRM/ss.jpeg)
 ```
 python ss-bmp.py
 ```
-* Convert semantic picture to bitmap
+* Convert semantic picture to bitmap:
 ![avatar](./PRM/ss.bmp)
 
 ```
 matlab
 astart
 ```
-* Bitmap with random sign
+* Bitmap with random sign:
 ![avatar](./PRM/allpath.jpg)
-* The optimal path from source point to destination
+* The optimal path from source point to destination:
 ![avatar](./PRM/path.jpg)
 
 
