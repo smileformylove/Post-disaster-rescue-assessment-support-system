@@ -17,7 +17,7 @@ We have train this model using the data from author's github https://github.com/
 </figure>
 
 ![avatar](./test_seg/0001TP_008550.png)![avatar](./test_seg/test1.png)
-|:-|:-|:-|:-|
+:-|:-|:-|:-|
 
 # Usage
 see also example.sh
