@@ -38,7 +38,7 @@ note: in --testing you can specify whether to save predicted images, currently o
 for manually checking, will be configured to be more flexible.
 
 # Dataset
-The images for testing in IBM, label.png means the label for disaster.png. Ohter image pair is obviously.
+The images for testing in IBM, label.png means the label for disaster.png. Ohter image pair is obviously to watch.
 The outcome is in test_seg, you could find the original image and its segmentation map
 
 .......
