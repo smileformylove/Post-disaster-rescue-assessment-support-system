@@ -12,7 +12,8 @@ In this section, What we do is just collecting the related images with dangerous
 
 
 ## Path Programming:
-### example
+### Example
+#### Image captured by drone
 ![avatar](./PRM/road.jpg)
 ```
 cd workspacce
