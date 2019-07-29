@@ -14,6 +14,7 @@ We have train this model using the data from author's github https://github.com/
 
 <center class="half">
     <img src=./test_seg/0001TP_008550.png width=400/><img src=./test_seg/test1.png width=400/>
+    <img src=./test_seg/0001TP_008880.png width=400/><img src=./test_seg/test12.png width=400/>
 </center>
 
 # Usage
