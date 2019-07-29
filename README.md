@@ -13,7 +13,7 @@ In this section, What we do is just collecting the related images with dangerous
 
 ## Path Programming:
 ### example
-![avater]
+![avatar]
 cd workspacce
 python ss-bmp.py
 matlab
