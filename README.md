@@ -19,9 +19,6 @@ cd workspacce
 ![avatar](./PRM/road.jpg)
 
 
-* The architecture of semantic segmentation model:
-![avatar](./PRM/architecture.png)
-
 
 * Result of semantic segmentation:
 ![avatar](./PRM/ss.jpeg)
