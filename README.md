@@ -16,7 +16,7 @@ cd workspacce
 * Image captured by drone:
 ![avatar](./PRM/road.jpg)
 * The architecture of semantic segmentation model:
-![avatar](./PRM/architecture.jpg)
+![avatar](./PRM/architecture.png)
 * Result of semantic segmentation:
 ![avatar](./PRM/ss.jpeg)
 ```
