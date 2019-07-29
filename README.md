@@ -8,13 +8,12 @@ Since images or videos of post disaster are unaccessible for us by now, our mode
 ## Object Detection
 In this section, What we do is just collecting the related images with dangerous objects, such as leakage wire, sharp item, corrupted house and so on. Then we feed them into the Watson for visual recognition on IBM cloud[!!!]. Here is our outcome for classifying images and detecting objects:
 
-## Semantic Segmentation:
-
-
 ## Path Programming:
 ### Example
 * Image captured by drone
 ![avatar](./PRM/road.jpg)
+* Result of semantic segmentation
+![avatar](./PRM/ss.jpeg)
 ```
 cd workspacce
 python ss-bmp.py
