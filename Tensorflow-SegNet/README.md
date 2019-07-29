@@ -10,6 +10,9 @@ scikit-image
 Our architecture is from SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation Vijay Badrinarayanan, Alex Kendall and Roberto Cipolla, PAMI 2017 [http://arxiv.org/abs/1511.00561]. And here is the model:
 ![avatar](../PRM/architecture.png)
 
+We have train this model using the data from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder. This dataset is public and we get the not bad performance. Here we list serveral original pictures and its semantic segmentation:
+![avatar](./IBM/label1.png)![avatar](./IBM/sample1.png)
+![avatar](./IBM/label12.png)![avatar](./IBM/sample12.png)
 # Usage
 see also example.sh
 training:
@@ -29,7 +32,6 @@ note: in --testing you can specify whether to save predicted images, currently o
 for manually checking, will be configured to be more flexible.
 
 # Dataset
-The dataset for trained can be download from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder.
 The images for testing in IBM, label.png means the label for disaster.png. Ohter image pair is obviously.
 The outcome is in test_seg, you could find the original image and its segmentation map
 
