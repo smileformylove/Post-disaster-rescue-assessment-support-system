@@ -16,8 +16,7 @@ We have train this model using the data from author's github https://github.com/
     <img src="./test_seg/0001TP_008550.png"width=400/><img src="./test_seg/test1.png"width=400/>
 </figure>
 
-![avatar](./test_seg/0001TP_008550.png)![avatar](./test_seg/test1.png)
-:-|:-|:-|:-|
+![avatar](./test_seg/0001TP_008550.png width=400)![avatar](./test_seg/test1.png width=400)
 
 # Usage
 see also example.sh
