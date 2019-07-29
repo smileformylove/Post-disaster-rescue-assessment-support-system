@@ -11,8 +11,7 @@ Our architecture is from SegNet: A Deep Convolutional Encoder-Decoder Architectu
 ![avatar](../PRM/architecture.png)
 
 We have train this model using the data from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder. This dataset is public and we get the not bad performance. Here we list serveral original pictures and its semantic segmentation:
-![avatar](./IBM/label1.png)![avatar](./IBM/sample1.png)
-![avatar](./IBM/label12.png)![avatar](./IBM/sample12.png)
+![avatar](./test_seg/0001TP_008550.png) ![avatar](./test_seg/test1.png)
 # Usage
 see also example.sh
 training:
