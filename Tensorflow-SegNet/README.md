@@ -25,7 +25,7 @@ note: in --testing you can specify whether to save predicted images, currently o
 for manually checking, will be configured to be more flexible.
 
 # Dataset
-The dataset for trained can be download from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder
+The dataset for trained can be download from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder.
 The images for testing in IBM, label.png means the label for disaster.png. Ohter image pair is obviously.
 The outcome is in test_seg, you could find the original image and its segmentation map
 
