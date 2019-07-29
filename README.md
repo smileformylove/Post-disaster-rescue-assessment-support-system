@@ -14,7 +14,9 @@ In this section, What we do is just collecting the related images with dangerous
 ## Path Programming:
 ### example
 ![avatar](./road.jpg)
+```
 cd workspacce
 python ss-bmp.py
 matlab
 astart
+```
