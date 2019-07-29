@@ -10,13 +10,26 @@ In this section, What we do is just collecting the related images with dangerous
 
 ## Path Programming:
 ### Example
-* Image captured by drone
-![avatar](./PRM/road.jpg){:height="100" width="100"}
-* Result of semantic segmentation
-![avatar](./PRM/ss.jpeg){:height="100" width="100"}
 ```
 cd workspacce
+```
+* Image captured by drone
+![avatar](./PRM/road.jpg)
+* Result of semantic segmentation
+![avatar](./PRM/ss.jpeg)
+```
 python ss-bmp.py
+```
+* Convert semantic picture to bitmap
+![avatar](./PRM/ss.bmp)
+
+```
 matlab
 astart
 ```
+* Bitmap with random sign
+![avatar](./PRM/allpath.jpg)
+* The optimal path from source point to destination
+![avatar](./PRM/path.jpg)
+
+
