@@ -11,6 +11,10 @@ In this section, What we do is just collecting the related images with dangerous
 
 ![avatar](./dt3.png)
 
+For now, we have not trained the whole model of object detection, we just divde the input image into serveral pieces. And then we classify each piece and label the object, at last merge these pieces. Here are our examples for detection:
+![avatar](./dt1.png)
+![avatar](./dt2.png)
+
 ## Semantic Segmentation: 
 
 ## Path Programming:
