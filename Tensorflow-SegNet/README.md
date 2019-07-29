@@ -6,6 +6,10 @@ tensorflow 1.0
 Pillow (optional, for write label image)
 scikit-image
 
+#Model
+Our architecture is from SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation Vijay Badrinarayanan, Alex Kendall and Roberto Cipolla, PAMI 2017 [http://arxiv.org/abs/1511.00561]. And here is the model:
+![avatar](./PRM/architecture.png)
+
 # Usage
 see also example.sh
 training:
