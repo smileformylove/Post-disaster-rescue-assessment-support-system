@@ -1,5 +1,5 @@
 # Tensorflow-SegNet
-This code heavily folllowed  https://github.com/search?q=Tensorflow-SegNet
+This code is heavily folllowed  https://github.com/search?q=Tensorflow-SegNet
 
 # Requirement
 tensorflow 1.0
