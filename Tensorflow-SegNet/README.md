@@ -16,7 +16,7 @@ We have trained this model using the data from author's github https://github.co
     <img src="./test_seg/0001TP_008550.png"width=400/><img src="./test_seg/test1.png"width=400/>
 </figure>
 <figure>
-    <img src="./test_seg/0001TP_008880.png"width=400/><img src="./test_seg/test12.png"width=400/>
+    <img src="./test_seg/disaster.png"width=400/><img src="./test_seg/dis.png"width=400/>
 </figure>
 
 For more examples, you could see the [folder.](https://github.com/smileformylove/Post-disaster-rescue-assessment-support-system/tree/master/Tensorflow-SegNet/test_seg)You can also use the following command to test your own iamge with its label.
