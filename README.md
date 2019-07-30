@@ -65,5 +65,5 @@ astart
 * color.py: Color the 0/1 mask for demonstration.
 * dfs-construction: Use dfs to create road maps and the weights of roads on the basic of 0/1 mask. (But this code is very time-consuming.)
 * generate_graph.py: Quickly generate road maps for demonstration (But can not get the.) 
-* floyd-optimized_path: Use floyd algorithm to get final road planning.
+* floyd-optimized_path: Use floyd algorithm to get final route planning.
 
