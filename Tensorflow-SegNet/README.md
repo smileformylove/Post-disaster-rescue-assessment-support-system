@@ -20,6 +20,7 @@ We have trained this model using the data from author's github https://github.co
     <img src="./test_seg/disaster.png"width=400/>
     <img src="./test_seg/dis.png"width=400/>
 </figure>
+
 The disaster image we test comes from [website.](https://image.baidu.com/)
 For more examples, you could see the [folder.](https://github.com/smileformylove/Post-disaster-rescue-assessment-support-system/tree/master/Tensorflow-SegNet/test_seg)You can also use the following command to test your own iamge with its label.
 
