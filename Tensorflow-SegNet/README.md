@@ -13,10 +13,12 @@ Our architecture is from SegNet: A Deep Convolutional Encoder-Decoder Architectu
 We have trained this model using the data from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder. This dataset is public and we get the not bad performance. Here we list serveral original pictures and its semantic segmentation:
 
 <figure>
-    <img src="./test_seg/0001TP_008550.png"width=400/><img src="./test_seg/test1.png"width=400/>
+    <img src="./test_seg/0001TP_008550.png"width=400/>
+    <img src="./test_seg/test1.png"width=400/>
 </figure>
 <figure>
-    <img src="./test_seg/disaster.png"width=400/><img src="./test_seg/dis.png"width=400/>
+    <img src="./test_seg/disaster.png"width=400/>
+    <img src="./test_seg/dis.png"width=400/>
 </figure>
 The disaster image we test comes from [website.](image.baidu.com/)
 For more examples, you could see the [folder.](https://github.com/smileformylove/Post-disaster-rescue-assessment-support-system/tree/master/Tensorflow-SegNet/test_seg)You can also use the following command to test your own iamge with its label.
