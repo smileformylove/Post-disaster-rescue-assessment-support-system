@@ -27,17 +27,17 @@ For more examples, you could see the [folder.](https://github.com/smileformylove
 # Usage
 see also example.sh
 training:
-
+```
   python main.py --log_dir=path_to_your_log --image_dir=path_to_CamVid_train.txt --val_dir=path_to_CamVid_val.txt --batch_size=5
-
+```
 finetune:
-
+```
   python main.py --finetune=path_to_saved_ckpt --log_dir=path_to_your_log --image_dir=path_to_CamVid_train.txt --val_dir=path_to_CamVid_val.txt --batch_size=5
-
+```
 testing:
-
+```
   python main.py --testing=path_to_saved_ckpt --log_dir=path_to_your_log --test_dir=path_to_CamVid_train.txt --batch_size=5 --save_image=True
-
+```
 You can set default path and parameters in main.py line 6~18.
 note: in --testing you can specify whether to save predicted images, currently only save one image
 for manually checking, will be configured to be more flexible.
