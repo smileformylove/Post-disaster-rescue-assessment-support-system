@@ -15,7 +15,7 @@ For now, we have not trained the whole model of object detection, we just divde 
 ![avatar](./object-detection/dt1.png)
 ![avatar](./object-detection/dt2.png)
 
-More details is [here!](https://github.com/smileformylove/Post-disaster-rescue-assessment-support-system/blob/master/object%20detection/README.md "With a Title")
+More details is [here!](https://github.com/smileformylove/Post-disaster-rescue-assessment-support-system/blob/master/object-detection/README.md "With a Title")
 
 ## Semantic Segmentation: 
 Details for this part could see [here!](https://github.com/smileformylove/Post-disaster-rescue-assessment-support-system/blob/master/Tensorflow-SegNet/README.md "With a Title"). 
