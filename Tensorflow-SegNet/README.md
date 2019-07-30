@@ -17,8 +17,8 @@ We have trained this model using the data from author's github https://github.co
     <img src="./test_seg/test1.png"width=400/>
 </figure>
 <figure>
-    <img src="./test_seg/disaster.png"width=400/>
-    <img src="./test_seg/dis.png"width=400/>
+    <img src="./test_seg/0001TP_008880.png"width=400/>
+    <img src="./test_seg/test12.png"width=400/>
 </figure>
 
 The disaster image we test comes from [website.](https://image.baidu.com/)
