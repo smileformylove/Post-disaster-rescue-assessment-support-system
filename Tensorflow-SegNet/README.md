@@ -10,7 +10,7 @@ scikit-image
 Our architecture is from SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation Vijay Badrinarayanan, Alex Kendall and Roberto Cipolla, PAMI 2017 [http://arxiv.org/abs/1511.00561]. And here is the model:
 ![avatar](../PRM/architecture.png)
 
-We have train this model using the data from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder. This dataset is public and we get the not bad performance. Here we list serveral original pictures and its semantic segmentation:
+We have trained this model using the data from author's github https://github.com/alexgkendall/SegNet-Tutorial in the CamVid folder. This dataset is public and we get the not bad performance. Here we list serveral original pictures and its semantic segmentation:
 
 <figure>
     <img src="./test_seg/0001TP_008550.png"width=400/><img src="./test_seg/test1.png"width=400/>
