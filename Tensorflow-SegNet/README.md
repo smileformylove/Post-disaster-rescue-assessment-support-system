@@ -19,6 +19,10 @@ We have trained this model using the data from author's github https://github.co
     <img src="./test_seg/0001TP_008880.png"width=400/><img src="./test_seg/test12.png"width=400/>
 </figure>
 
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="./test_seg/0001TP_008550.png"  width="400" height="400" ></div>
+
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="./test_seg/test1.png" width="400" height="400" ></div>
+
 # Usage
 see also example.sh
 training:
